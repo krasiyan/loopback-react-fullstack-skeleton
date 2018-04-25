@@ -8,6 +8,7 @@
     "postinstall:api": "yarn --cwd api --ignore-engines install",
     "test": "FORCE_COLOR=1 run-s -ln test:**",
     "test:api": "yarn --cwd api test",
+    "test:client": "yarn --cwd client test",
     "build": "FORCE_COLOR=1 run-p -ln build:**",
     "prebuild:api": "rimraf build/api",
     "build:api": "yarn --cwd api build",
