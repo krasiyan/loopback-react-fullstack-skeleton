@@ -4,8 +4,5 @@
   "license": "MIT",
   "devDependencies": {
     "loopback-cli": "^4.2.0"
-  },
-  "resolutions": {
-    "loopback-datasource-juggler": "2.54.1"
   }
 }
