@@ -7,6 +7,7 @@ const debug = require('debug');
 const argv = require('yargs').argv;
 const nodeExternals = require('webpack-node-externals');
 const VirtualModulePlugin = require('virtual-module-webpack-plugin');
+const CopyPkgJsonPlugin = require('copy-pkg-json-webpack-plugin');
 
 const paths = {
   projectRoot: __dirname,
@@ -89,6 +90,12 @@ module.exports = {
     config.plugins.push(new VirtualModulePlugin({
       moduleName: 'server/boot-instructions.json',
       contents: bootInstructions,
+    }));
+    config.plugins.push(new CopyPkgJsonPlugin({
+      remove: ['devDependencies', 'scripts'],
+      replace: {
+        main: 'main.js',
+      },
     }));
 
     return config;

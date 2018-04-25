@@ -24,6 +24,7 @@
   },
   "devDependencies": {
     "backpack-core": "^0.7.0",
+    "copy-pkg-json-webpack-plugin": "^0.0.38",
     "eslint": "^3.17.1",
     "eslint-config-loopback": "^8.0.0",
     "eslint-plugin-json": "^1.2.0",
