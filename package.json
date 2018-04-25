@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "postinstall": "run-s -ln postinstall:**",
+    "postinstall": "FORCE_COLOR=1 run-s -ln postinstall:**",
     "postinstall:client": "yarn --cwd client install",
     "postinstall:api": "yarn --cwd api install"
   },
