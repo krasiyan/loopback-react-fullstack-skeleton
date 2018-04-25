@@ -3,6 +3,11 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "postinstall": "yarn --cwd api install && yarn --cwd client install"
+    "postinstall": "run-s -ln postinstall:**",
+    "postinstall:client": "yarn --cwd client install",
+    "postinstall:api": "yarn --cwd api install"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.2"
   }
 }
