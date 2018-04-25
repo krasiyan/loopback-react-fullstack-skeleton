@@ -5,7 +5,9 @@
   "scripts": {
     "postinstall": "FORCE_COLOR=1 run-s -ln postinstall:**",
     "postinstall:client": "yarn --cwd client install ",
-    "postinstall:api": "yarn --cwd api --ignore-engines install"
+    "postinstall:api": "yarn --cwd api --ignore-engines install",
+    "test": "FORCE_COLOR=1 run-s -ln test:**",
+    "test:api": "yarn --cwd api test"
   },
   "devDependencies": {
     "npm-run-all": "^4.1.2"
