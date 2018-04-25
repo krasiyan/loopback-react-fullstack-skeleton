@@ -12,7 +12,10 @@
     "build": "FORCE_COLOR=1 run-p -ln build:**",
     "prebuild:api": "rimraf build/api",
     "build:api": "yarn --cwd api build",
-    "postbuild:api": "mkdir -p build && cp -r api/build build/api"
+    "postbuild:api": "mkdir -p build && cp -r api/build build/api",
+    "prebuild:client": "rimraf build/client",
+    "build:client": "yarn --cwd client build",
+    "postbuild:client": "mkdir -p build && cp -r client/build build/client"
   },
   "devDependencies": {
     "npm-run-all": "^4.1.2",
