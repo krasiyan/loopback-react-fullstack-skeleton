@@ -2,9 +2,10 @@
   "name": "client",
   "version": "0.0.0",
   "scripts": {
-    "dev": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom"
+    "dev": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test --env=jsdom",
+    "test:lint": "react-app-rewired lint"
   },
   "dependencies": {
     "react": "^16.3.2",
@@ -12,7 +13,8 @@
     "react-scripts": "1.1.4"
   },
   "devDependencies": {
-    "create-react-app": "^1.5.2"
+    "create-react-app": "^1.5.2",
+    "react-app-rewired": "^1.5.2"
   },
   "license": "MIT"
 }
