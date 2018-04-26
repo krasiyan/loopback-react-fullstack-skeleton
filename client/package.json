@@ -5,8 +5,8 @@
     "dev": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "FORCE_COLOR=1 run-s -ln test:**",
-    "test:unit": "react-app-rewired test --env=jsdom",
-    "test:lint": "eslint ."
+    "test:lint": "eslint .",
+    "test:unit": "react-app-rewired test --env=jsdom"
   },
   "dependencies": {
     "react": "^16.3.2",
