@@ -25,6 +25,8 @@
   },
   "devDependencies": {
     "npm-run-all": "^4.1.2",
+    "pre-commit": "^1.2.2",
     "rimraf": "^2.6.2"
-  }
+  },
+  "pre-commit": "testlint"
 }
