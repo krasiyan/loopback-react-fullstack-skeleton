@@ -5,7 +5,7 @@
     "dev": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test --env=jsdom",
-    "test:lint": "react-app-rewired lint"
+    "test:lint": "eslint ."
   },
   "dependencies": {
     "react": "^16.3.2",
